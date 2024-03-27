@@ -3,19 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Portofolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
-    /* Style untuk membuat gambar menjadi lingkaran */
     .rounded-circle {
       border-radius: 50%;
     }
+    .body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    ::-webkit-scrollbar {
+    display: none; /* Sembunyikan scrollbar */
+}
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-dark bg-dark fixed-top active">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color: rgba(255, 85, 0, 0.57);">R</a>
+      <a class="navbar-brand" href="#" style="color: rgba(255, 0, 0, 0.862);">Rizky Angkata</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,23 +32,16 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#main2">Main 2</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <form class="d-flex mt-3" role="search">
@@ -55,29 +53,184 @@
     </div>
   </nav>
 
-  <div id="main" style="background: #212529;">
-    <div class="container d-flex justify-content-end align-items-center" style="height: 100vh; color: rgba(255, 85, 0, 0.57);">
-        <!-- Kolom gambar -->
-        <div class="col-md-4 text-md-end">
-          <!-- Gambar -->
-          <img src="cover.jpeg" alt="Profile Picture" class="rounded-circle me-3" style="width: 250px; height: auto;">
-        </div>
-        <!-- Kolom teks -->
-        <div class="col-md-8">
-          <div>
-            <h2 style="margin-left: 80px;">Welcome!!</h2>
-            <h3 style="color: aliceblue; margin-left: 80px;">Saya Rizky Angkata P. S.</h3>
-            <h6 style="color: aliceblue; margin-left: 80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
-            <h6 style="color: aliceblue; margin-left: 80px;">Aliquam quos explicabo ex numquam suscipit aperiam?</h6>
-            <h6><a class="instagram" target="_blank" style="text-decoration: none; margin-left: 80px;" href="https://www.instagram.com/rizkyangkata">Instagram</a> <a class="wa" target="_blank" style="text-decoration: none; margin-left: 10px;" href="https://wa.me/6281226671134">WhatsApp</a> <a class="wa" target="_blank" style="text-decoration: none; margin-left: 10px;" href=" https://github.com/RIZKYANGKATA">GitHub</a></h6> 
+  <section>
+    <div id="home" style="background: #212529;">
+      <div class="container d-flex justify-content-end align-items-center" style="height: 100vh; color: rgba(255, 0, 0, 0.862)">
+          <!-- Kolom gambar -->
+          <div class="col-md-4 text-md-end">
+            <!-- Gambar -->
+            <img src="cover.jpeg" alt="Profile Picture" class="rounded-circle me-3" style="width: 250px; height: auto;">
+          </div>
+          <!-- Kolom teks -->
+          <div class="col-md-8">
+            <div>
+              <h2 style="margin-left: 80px;">Rizky Angkata P. S.</h2>
+              <h5 style="color: aliceblue; margin-left: 80px;">Mahasiswa Politeknik Negeri Malang</h5>
+              <h5 style="color: aliceblue; margin-left: 80px;">Jurusan Teknologi Informasi</h5>
+              <h5 style="color: aliceblue; margin-left: 80px;">Prodi D4 Teknik Informatika</h5>
+              <h6><a class="instagram" target="_blank" style="text-decoration: none; margin-left: 80px;" href="https://www.instagram.com/rizkyangkata">Instagram</a> <a class="wa" target="_blank" style="text-decoration: none; margin-left: 10px;" href="https://wa.me/6281226671134">WhatsApp</a> <a class="wa" target="_blank" style="text-decoration: none; margin-left: 10px;" href=" https://github.com/RIZKYANGKATA">GitHub</a></h6> 
+            </div>
           </div>
         </div>
-      </div>
-  </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,192L205.7,32L411.4,0L617.1,160L822.9,192L1028.6,128L1234.3,224L1440,64L1440,0L1234.3,0L1028.6,0L822.9,0L617.1,0L411.4,0L205.7,0L0,0Z"></path></svg>
+  </section>
+  
 
-  <div id="main2" style="background: #fff;">
-        <h2>Halo</h2>
+  <div id="about" style="background: #fff; display: flex; justify-content: space-between; align-items: center; padding: 20px; overflow-y: auto; height: auto;">
+    <!-- Konten tentang -->
+    <div style="flex: 1; padding-right: 20px;"> <!-- Tambahkan padding-right di sini -->
+        <br><br><br>
+        <h2 style="text-align: center;">About Me</h2>
+        <br>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              One of three columns
+            </div>
+            <div class="col">
+              One of three columns
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+
+
+
+  <section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 1440 320"><path fill="#212529" fill-opacity="1" d="M0,32L110.8,160L221.5,160L332.3,192L443.1,192L553.8,128L664.6,288L775.4,128L886.2,160L996.9,192L1107.7,160L1218.5,32L1329.2,32L1440,0L1440,320L1329.2,320L1218.5,320L1107.7,320L996.9,320L886.2,320L775.4,320L664.6,320L553.8,320L443.1,320L332.3,320L221.5,320L110.8,320L0,320Z"></path></svg>
+    <div id="projects" style="background: #212529; padding-left: 2vw; padding-right: 2vw;">
+      <br><br><br>
+      <h2 style="color: #fff; text-align: center;">My Projects</h2>
+      <br>
+      <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100" style="border-radius: 0; width: 100%;">
+                  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="gc1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="gc2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="gc3.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="gc4.png" class="d-block w-100" alt="...">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="gc5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="gc6.png" class="d-block w-100" alt="...">
+                      </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100" style="border-radius: 0; width: 100%;">
+                  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="gc7.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="gc8.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="gc9.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="gc10.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100" style="border-radius: 0; width: 100%;">
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="gc11.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="gc12.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="gc13.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="gc14.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="gc15.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gc16.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gc17.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="gc18.png" class="d-block w-100" alt="...">
+              </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+  
+      </div>
+      <br><br>
   </div>
+  </section>
+
+  <section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,32L205.7,96L411.4,160L617.1,256L822.9,96L1028.6,128L1234.3,32L1440,0L1440,0L1234.3,0L1028.6,0L822.9,0L617.1,0L411.4,0L205.7,0L0,0Z"></path></svg>
+    <div id="contact" style="background-color: #fff;">
+
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
