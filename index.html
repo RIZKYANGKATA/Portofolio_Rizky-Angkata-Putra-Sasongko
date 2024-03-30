@@ -6,6 +6,7 @@
   <title>PORTOFOLIO | RIZKY</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" >
   <style>
     .rounded-circle {
       border-radius: 50%;
@@ -14,100 +15,110 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     ::-webkit-scrollbar {
-    display: none; /* Sembunyikan scrollbar */
+    display: none; 
    }
    .vertical-line {
-      border: none; /* Hilangkan border bawaan */
-      border-left: 3px solid #212529; /* Tambahkan border kiri */
-      height: 150px; /* Tinggi garis vertikal */
-      width: 0; /* Atur lebar menjadi 0 untuk garis vertikal */
-      margin-left: -15px; /* Pusatkan garis */
-      margin-top: -160px;
+      border: none; 
+      border-left: 3px solid #000000; 
+      height: 150px;
+      width: 0; 
+      margin-left: -15px; 
+      margin-top: -163px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-dark bg-dark fixed-top active">
     <div class="container-fluid">
-      <b><a class="navbar-brand" href="#" style="color: rgba(255, 0, 0, 0.862);">RAPS</a></b>
+     <i class="bi bi-r-circle-fill" style="color: rgba(255, 0, 0, 0.862); font-size: 35px;"></i>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: rgba(255, 0, 0, 0.862);">RAPS</h4>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skill">Skill & Education</a>
-            </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skill & Education</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
           </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-        </div>
+      </div>
+      
       </div>
     </div>
   </nav>
+  <!-- End -->
 
+  <!-- Home -->
   <section>
     <div id="home" style="background: #212529;">
       <div class="container d-flex justify-content-end align-items-center" style="height: 100vh; color: rgba(255, 0, 0, 0.862)">
-          <!-- Kolom gambar -->
+          
           <div class="col-md-4 text-md-end">
-            <!-- Gambar -->
+            
             <img src="/asset/cover.jpeg" alt="Profile Picture" class="rounded-circle me-3" style="width: 250px; height: auto;">
           </div>
-          <!-- Kolom teks -->
+          
           <div class="col-md-8">
             <div>
-              <h2 style="margin-left: 80px;">Rizky Angkata P. S.</h2>
-              <h5 style="color: aliceblue; margin-left: 80px;">Mahasiswa Politeknik Negeri Malang</h5>
-              <h5 style="color: aliceblue; margin-left: 80px;">Jurusan Teknologi Informasi</h5>
-              <h5 style="color: aliceblue; margin-left: 80px;">Prodi D4 Teknik Informatika</h5>
-              <h6><a class="instagram" target="_blank" style="text-decoration: none; margin-left: 80px;" href="https://www.instagram.com/rizkyangkata">Instagram</a> <a class="wa" target="_blank" style="text-decoration: none; margin-left: 10px;" href="https://wa.me/6281226671134">WhatsApp</a> <a class="wa" target="_blank" style="text-decoration: none; margin-left: 10px;" href=" https://github.com/RIZKYANGKATA">GitHub</a></h6> 
+              <h1 style="margin-left: 80px;">Rizky Angkata</h1>
             </div>
           </div>
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,96L34.3,90.7C68.6,85,137,75,206,64C274.3,53,343,43,411,37.3C480,32,549,32,617,58.7C685.7,85,754,139,823,133.3C891.4,128,960,64,1029,58.7C1097.1,53,1166,107,1234,106.7C1302.9,107,1371,53,1406,26.7L1440,0L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
   </section>
+  <!-- End -->
   
 
+  <!-- About -->
   <div id="about" style="background: #fff; display: flex; justify-content: space-between; align-items: center; padding: 20px; overflow-y: auto; height: auto;">
-    <!-- Konten tentang -->
-    <div style="flex: 1; padding-right: 20px;"> <!-- Tambahkan padding-right di sini -->
+    
+    <div style="flex: 1; padding-right: 20px;">
         <br><br>
         <h2 style="text-align: center;">About Me</h2>
         <br>
         <div class="container text-center">
           <div class="row align-items-center">
             <div class="col">
-              One of three columns
+              <h6>Halo nama saya Rizky Angkata Putra Sasongko,</h6>
+              <h6>saya berasal dari kota Madiun. Saat ini saya bagian dari mahasiswa</h6>
+              <h6>Politeknik Negeri Malang, Jurusan Teknologi Informasi prodi</h6>
+              <h6>D4 Teknik Informatika</h6>
             </div>
             <div class="col">
-              One of three columns
+              <h6>Saya sangat tertarik dengan web development dan</h6>
+              <h6>UI/UX, jadi saya ingin meningkatkan skill terutama dalam bidang</h6>
+              <h6>web development. Agar bisa menyalurkan ide-ide</h6>
+              <h6>dan dapat merealisasikan untuk dinikmati banyak orang.</h6>
             </div>
           </div>
         </div>
     </div>
 </div>
 <br><br><br><br><br><br>
+<!-- End -->
 
 
 
+  <!-- Project -->
   <section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 1440 320"><path fill="#212529" fill-opacity="1" d="M0,96L34.3,90.7C68.6,85,137,75,206,64C274.3,53,343,43,411,37.3C480,32,549,32,617,58.7C685.7,85,754,139,823,133.3C891.4,128,960,64,1029,58.7C1097.1,53,1166,107,1234,106.7C1302.9,107,1371,53,1406,26.7L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     <div id="projects" style="background: #212529; padding-left: 2vw; padding-right: 2vw;">
@@ -180,7 +191,7 @@
                       </button>
                   </div>
                   <div class="card-body">
-                      <p class="card-text">Sistem pendukung keputusan dengan menggunakan metode coppras. Dengan memasukkan nila kriteria.</p>
+                      <p class="card-text">Sistem pendukung keputusan dengan menggunakan metode coppras. Dengan memasukkan nila kriteria dapat melihat hasil perhitungan akhir yang dapat membantu dalam pengambilan keputusan</p>
                   </div>
               </div>
           </div>
@@ -233,8 +244,10 @@
       <br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
   </section>
+  <!-- End -->
 
 
+  <!-- Education -->
   <section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,128L34.3,112C68.6,96,137,64,206,64C274.3,64,343,96,411,90.7C480,85,549,43,617,58.7C685.7,75,754,149,823,149.3C891.4,149,960,75,1029,53.3C1097.1,32,1166,64,1234,85.3C1302.9,107,1371,117,1406,122.7L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
   </section>
@@ -264,24 +277,111 @@
           <div class="col">
           </div>
           <div class="col">
-            <h6>Dalam proses pengembangan web, </h6>
+            <ul>
+              <li>
+                <h6>Figma</h6>
+              </li>
+              <li>
+                <h6>HTML</h6>
+              </li>
+              <li>
+                <h6>CSS</h6>
+              </li>
+              <li>
+                <h6>Javascript</h6>
+              </li>
+              <li>
+                <h6>PHP</h6>
+              </li>
+              <li>
+                <h6>SQL</h6>
+              </li>
+              <hr class="vertical-line">
+            </ul>
           </div>
         </div>
       </div>
     </div>
     <br><br>
-    <!-- <div class="card" style="border-radius: 10px; margin: 40px">
-      <div class="card-body" style="border-radius: 10px; background-color: #212529;">
-        
-      </div>
-    </div> -->
+    <!-- End -->
 
+
+  <!-- Contact -->
   <section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,32L34.3,37.3C68.6,43,137,53,206,85.3C274.3,117,343,171,411,181.3C480,192,549,160,617,176C685.7,192,754,256,823,282.7C891.4,309,960,299,1029,261.3C1097.1,224,1166,160,1234,165.3C1302.9,171,1371,245,1406,282.7L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-    <div class="contact">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore autem non, possimus placeat, deserunt fuga nisi, natus dolorum perferendis at et odit aspernatur perspiciatis? Incidunt excepturi corporis repudiandae assumenda?
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 1440 320"><path fill="#212529" fill-opacity="1" d="M0,32L34.3,37.3C68.6,43,137,53,206,85.3C274.3,117,343,171,411,181.3C480,192,549,160,617,176C685.7,192,754,256,823,282.7C891.4,309,960,299,1029,261.3C1097.1,224,1166,160,1234,165.3C1302.9,171,1371,245,1406,282.7L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    <div class="end" style="background-color: #212529;">
+      <br><br>
+      <div id="contact" style="text-align: center;">
+        <h2 style="color: #fff;">Contact</h2>
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                  <label for="inputNama" style="color: rgba(255, 0, 0, 0.862);" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="inputNama" placeholder="">
+              </div>
+              <div class="mb-3">
+                  <label for="inputEmail" style="color: rgba(255, 0, 0, 0.862);" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="">
+              </div>
+              <div class="mb-3">
+                  <label for="inputPesan" style="color: rgba(255, 0, 0, 0.862);" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="inputPesan" rows="3"></textarea>
+              </div>
+              <button type="button" onclick="validateAndClearForm()" style="color: rgba(255, 0, 0, 0.862);" class="btn btn-light">Submit</button>
+          </div>
+          
+          <script>
+          function validateAndClearForm() {
+              var nama = document.getElementById('inputNama').value.trim();
+              var email = document.getElementById('inputEmail').value.trim();
+              var pesan = document.getElementById('inputPesan').value.trim();
+          
+              if (nama === '' || email === '' || pesan === '') {
+                  alert('Mohon lengkapi form sebelum mengirimkan pesan.');
+                  return;
+              }
+
+              document.getElementById('inputNama').value = '';
+              document.getElementById('inputEmail').value = '';
+              document.getElementById('inputPesan').value = '';
+          }
+          </script>
+          
+  
+            <div class="col">
+              <div class="container text-center">
+                  <div class="row align-items-center">
+                      <h6 style="color: rgba(255, 0, 0, 0.862);">More Info</h6>
+                      <br>
+                      <div class="col">
+                          <a href="https://www.instagram.com/rizkyangkata" style="text-decoration: none;">
+                              <i class="bi bi-instagram" style="color: rgba(255, 0, 0, 0.862); font-size: 50px;"></i>
+                          </a>        
+                      </div>
+                      <div class="col">
+                          <a href="https://wa.me/6281226671134" style="text-decoration: none;">
+                              <i class="bi bi-whatsapp" style="color: rgba(255, 0, 0, 0.862); font-size: 50px;"></i>
+                          </a>        
+                      </div>
+                      <div class="col">
+                          <a href="https://github.com/RIZKYANGKATA" style="text-decoration: none;">
+                              <i class="bi bi-github" style="color: rgba(255, 0, 0, 0.862); font-size: 50px;"></i>
+                          </a>        
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+        <br><br><br>
     </div>
   </section>
+  <!-- End -->
+
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
