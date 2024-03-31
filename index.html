@@ -44,7 +44,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#about">About</a>
@@ -92,7 +92,7 @@
   <div id="about" style="background: #fff; display: flex; justify-content: space-between; align-items: center; padding: 20px; overflow-y: auto; height: auto;">
     
     <div style="flex: 1; padding-right: 20px;">
-        <br><br>
+        <br><br><br>
         <h2 style="text-align: center;">About Me</h2>
         <br>
         <div class="container text-center">
@@ -331,23 +331,48 @@
               </div>
               <button type="button" onclick="validateAndClearForm()" style="color: rgba(255, 0, 0, 0.862);" class="btn btn-light">Submit</button>
           </div>
+
+
+          <!-- Modal -->
+            <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Berhasil!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Pesanmu berhasil dikirim
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           
           <script>
-          function validateAndClearForm() {
-              var nama = document.getElementById('inputNama').value.trim();
-              var email = document.getElementById('inputEmail').value.trim();
-              var pesan = document.getElementById('inputPesan').value.trim();
-          
-              if (nama === '' || email === '' || pesan === '') {
-                  alert('Mohon lengkapi form sebelum mengirimkan pesan.');
-                  return;
-              }
+              function validateAndClearForm() {
+                  var nama = document.getElementById('inputNama').value.trim();
+                  var email = document.getElementById('inputEmail').value.trim();
+                  var pesan = document.getElementById('inputPesan').value.trim();
 
-              document.getElementById('inputNama').value = '';
-              document.getElementById('inputEmail').value = '';
-              document.getElementById('inputPesan').value = '';
-          }
+                  if (nama === '' || email === '' || pesan === '') {
+                      alert('Mohon lengkapi form sebelum mengirimkan pesan.');
+                      return;
+                  }
+
+                  document.getElementById('inputNama').value = '';
+                  document.getElementById('inputEmail').value = '';
+                  document.getElementById('inputPesan').value = '';
+
+                  // Menampilkan Modal
+                  var myModal = new bootstrap.Modal(document.getElementById('successModal'));
+                  myModal.show();
+              }
           </script>
+
           
   
             <div class="col">
